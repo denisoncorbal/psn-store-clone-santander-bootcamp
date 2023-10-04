@@ -1,4 +1,8 @@
-# Store
+# Additions
+
+Added a service to provide fake data and dividers by label and type of games in home page.
+
+## Store
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 

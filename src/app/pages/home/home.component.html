@@ -1,31 +1,30 @@
 <div class="home__container">
-	<app-card
-		gameCover="assets/bt-1.jpg"
-		gameLabel="DIGITAL"
-		gameType="DIGITAL | PS4"
-		gamePrice="R$ 129,99"
-	>
-	</app-card>
-	<app-card
-		gameCover="assets/bt-4.jpg"
-		gameLabel="EXCLUSIVE"
-		gameType="DISC | PS5"
-		gamePrice="R$ 269,99"
-	>
-	</app-card>
-	<app-card
-		gameCover="assets/ac-cover.jpg"
-		gameLabel="BEST OF YEAR"
-		gameType="DIGITAL | PS5"
-		gamePrice="R$ 369,99"
-		>
-	</app-card>
-	<app-card
-		gameCover="assets/bt-hardline.jpg"
-		gameLabel="NEW"
-		gameType="DIGITAL | PS3 PS4 PS5"
-		gamePrice="R$ 369,99"
-	>
-	</app-card>
-</div>
+	<div class="games__container">
+		<app-card *ngFor="let game of games; index as i" gameCover="{{game.cover}}" gameLabel="{{game.label}}"
+			gameType="{{game.type}}" gamePrice="{{game.price}}">
+		</app-card>
+	</div>	
 
+	<div class="divider__container">
+		<h1>PS5</h1>
+		<hr />
+	</div>	
+
+	<div class="games__container">		
+		<app-card *ngFor="let game of ps5Games; index as i" gameCover="{{game.cover}}" gameLabel="{{game.label}}"
+			gameType="{{game.type}}" gamePrice="{{game.price}}">
+		</app-card>
+	</div>
+
+	<div class="divider__container">
+		<h1>DIGITAL</h1>
+		<hr />
+	</div>
+
+	<div class="games__container">		
+		<app-card *ngFor="let game of digitalGames; index as i" gameCover="{{game.cover}}" gameLabel="{{game.label}}"
+			gameType="{{game.type}}" gamePrice="{{game.price}}">
+		</app-card>
+	</div>
+
+</div>

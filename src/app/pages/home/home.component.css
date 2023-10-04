@@ -1,4 +1,4 @@
-.home__container{
+.games__container{
 	width: 90%;
 	margin: auto;
 	padding-top: 50px;
@@ -7,4 +7,17 @@
 	justify-content: space-around;
 	align-items: baseline;
 	flex-wrap: wrap;
+}
+.divider__container{
+	display: flex;
+	flex-direction: column;
+}
+h1{
+	color: white;
+	margin: 50px 10px 10px 50px;
+}
+hr{
+	border-bottom: 3px solid white;
+	width: 90%;	
+	align-self: center;
 }
